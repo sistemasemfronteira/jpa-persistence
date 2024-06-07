@@ -1,0 +1,31 @@
+Resumo do Manual do Projeto JDBC.
+
+Título: Projeto JPA Simples
+
+Este projeto demonstra um exemplo simples de CRUD (Create, Read, Update, Delete) usando JDBC em Java.
+
+Versão do MYSQL -> 8.0.25, Porta padrão: 3306, Usuario/Senha: root;
+
+Estrutura de Build: Maven na versão 1.0;
+
+Com a seguinte tabela:
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
+
+*Obijetivos para esta aplicação no futuro.:* Acrecentar recursos avançados como caching, lazy loading, 
+e suporte a queries complexas através do JPQL (Java Persistence Query Language) ou Criteria API, 
+que permite criar consultas de forma programática(por assim dizer).
+
+O código com JPA tende a ser mais conciso e fácil de entender,
+já que muitas das operações de banco de dados são realizadas automaticamente pelo framework ORM.
+Transações e gerenciamento de conexões também são simplificados.
+
+Este código foi feito em 13/12/2023.
+
+Atualizado em 06/06/2024.
+
+Atenciosamente, Iago H. L. de Souza. Obrigado.
